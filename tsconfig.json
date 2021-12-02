@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "incremental": true,
+    "lib": [
+      "esnext"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "noImplicitThis": true /* Report error when this is user in a function */,
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": false /* Report errors on unused parameters. */,
+    "outDir": "./dist",
+    "paths": {
+      "@src/*": ["src/*"],
+    },
+    "removeComments": true,
+    "resolveJsonModule": true, /* for test samples */
+    "rootDirs": [
+      ".",
+      "bazel-out/k8-fastbuild/bin"
+    ],
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "strictFunctionTypes": true /* Enable strict checking of function types. */,
+    "strictNullChecks": true /* Enable strict null checks. */,
+    "strictPropertyInitialization": false /* Disable strict property initialization check. */,
+    "target": "esnext",
+    "types": [
+      "jest",
+      "node"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "./__tests__/",
+    "./node_modules/",
+    "./build/",
+    "./dist/",
+  ]
+}
